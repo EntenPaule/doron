@@ -75,3 +75,12 @@ managed_services = klipper
 primary_branch = main
 install_script = install.sh
 
+[update_manager KlipperScreen]
+install_script = /home/ente/KlipperScreen/scripts/KlipperScreen-install.sh
+requirements = /home/ente/KlipperScreen/scripts/KlipperScreen-requirements.txt
+env = /home/ente/.KlipperScreen-env/bin/python
+managed_services = KlipperScreen
+origin = https://github.com/KlipperScreen/KlipperScreen.git
+path = /home/ente/KlipperScreen
+type = git_repo
+
