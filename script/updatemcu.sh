@@ -58,7 +58,7 @@ for mcu in "${!MCUS[@]}"; do
 
     log "Opening menuconfig for $mcu"
     make menuconfig KCONFIG_CONFIG=${MCUS[$mcu]}
-   
+
     log "Starting build for $mcu with $CORES cores"
     make -j $CORES KCONFIG_CONFIG=${MCUS[$mcu]}
 
